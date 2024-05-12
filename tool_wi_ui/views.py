@@ -59,13 +59,13 @@ def view_dashboard(request):
     # prec_list = predictions_df["prec"].tolist()
     # mean_prec = int(sum(prec_list)/len(prec_list))
     
-    hourly_temp_list = df_hourly["temp_moy"].tolist()
-    hours = df_hourly["hour"].tolist()
+    # hourly_temp_list = df_hourly["temp_moy"].tolist()
+    # hours = df_hourly["hour"].tolist()
     
-    daily_temp_list = df_daily["temp_moy"].tolist()
-    days = df_daily["date"].tolist()
+    # daily_temp_list = df_daily["temp_moy"].tolist()
+    # days = df_daily["date"].tolist()
         
-    timestamps = df["timestamp"].tolist()
+    # timestamps = df["timestamp"].tolist()
     
     times = [15, 30, 45, 60, 15, 30, 45, 60, 15, 30, 45, 60, 15, 30, 45, 60, 15, 30, 45, 60]
     
@@ -87,8 +87,10 @@ def view_dashboard(request):
         'mean_wsp': mean_wsp, 
         'mean_hum':mean_hum, 
         # 'mean_prec': mean_prec, 
-        'times2Hours': times2Hours,
+        # 'times2Hours': times2Hours,
 
         'times':times, 
 
                                         })
+def view_analyse(request):
+    return render(request, "champ.html")
