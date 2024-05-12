@@ -4,12 +4,12 @@ import json
 
 class PredictionBasiqueForm(forms.ModelForm):
 
-    rainfall =  forms.FloatField(min_value=0, label="Pluviomètrie", help_text="Requis", required=True)
+    rainfall =  forms.FloatField(min_value=0, label="Pluviométrie", help_text="Requis", required=True)
     culture = forms.CharField(label="Culture", help_text='Requis', required=True)
     region = forms.CharField(label="Region", help_text='Requis', required=True)
     temp = forms.FloatField(min_value=0, label="Température", help_text="Requis", required=True)
     humidity =forms.FloatField(min_value=0, label="Humidité", help_text="Requis", required=True)
-    superfice = forms.FloatField(min_value=0, label="Superficie", help_text="Requis", required=True)
+    superficie = forms.FloatField(min_value=0, label="Superficie", help_text="Requis", required=True)
     wind = forms.FloatField(min_value=0, label="Vitesse vent", help_text="Requis", required=True)
 
     class Meta:
@@ -30,12 +30,12 @@ class PredictionBasiqueForm(forms.ModelForm):
 
 class PredictionPremiumForm(forms.ModelForm):
 
-    rainfall =  forms.FloatField(min_value=0, label="Pluviomètrie", help_text="Requis", required=True)
+    rainfall =  forms.FloatField(min_value=0, label="Pluviométrie", help_text="Requis", required=True)
     culture = forms.CharField(label="Culture", help_text='Requis', required=True)
     region = forms.CharField(label="Region", help_text='Requis', required=True)
     temp = forms.FloatField(min_value=0, label="Température", help_text="Requis", required=True)
     humidity =forms.FloatField(min_value=0, label="Humidité", help_text="Requis", required=True)
-    superfice = forms.FloatField(min_value=0, label="Superficie", help_text="Requis", required=True)
+    superficie = forms.FloatField(min_value=0, label="Superficie", help_text="Requis", required=True)
     wind = forms.FloatField(min_value=0, label="Vitesse vent", help_text="Requis", required=True)
     p = forms.FloatField(min_value=0, label="Phosphore", help_text="Requis", required=True)
     k = forms.FloatField(min_value=0, label="Potassium", help_text="Requis", required=True)
