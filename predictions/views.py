@@ -40,5 +40,5 @@ def prediction_revenu(request):
             )
             return render(request, 'revenu.html', {'form': predictionForm, 'prediction': response["prix"]})
     else:
-        predictionForm = PredictionPremiumForm()
+        predictionForm = PredictionRevenuForm()
     return render(request, 'revenu.html', {'form': predictionForm})
