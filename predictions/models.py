@@ -5,13 +5,14 @@ class PredictionBasique(models.Model):
     """
         Une prédiction basique
     """
-    rainfall = models.FloatField()
+    
     culture = models.CharField(max_length=255)
     region = models.CharField(max_length=255)
     temp = models.FloatField()
     humidity =models.FloatField()
     superfice = models.FloatField()
     wind = models.FloatField()
+    rainfall = models.FloatField()
 
 class PredictionPremium(PredictionBasique):
     """

@@ -32,15 +32,39 @@
                     </div>
                     {% endif %}
                     <div class="row">
-                        <div class="col-6 me-2">
+                        <div class="col-4 me-2">
                             <label class="form-label">{{ form.culture.label}}</label>
                             {{ form.culture}}
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 me-2">
                             <label class="form-label">{{ form.region.label}}</label>
                             {{ form.region}}
                         </div>
+                        <div class="col-4">
+                            <label class="form-label">{{ form.superficie.label}}</label>
+                            {{ form.superficie}}
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-4 me-2">
+                            <label class="form-label">{{ form.temp.label}}</label>
+                            {{ form.temp}}
+                        </div>
+                        <div class="col-4 me-2">
+                            <label class="form-label">{{ form.humidity.label}}</label>
+                            {{ form.humidity}}
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label">{{ form.rainfall.label}}</label>
+                            {{ form.rainfall}}
+                        </div>
+                    </div>
+                    {% if prediction %}
+                    <div>
+                        <label class="form-label">Rendement</label>
+                        {{ prediction }} Kg/ha
+                    </div>
+                    {% endif %}
                     <div class="d-grid gap-2">
                         <input type="hidden" name="next" value="{{next}}">
                         <button class="btn btn-primary btn-block py-2 mb-4 mt-5 fw500 w-100" type="submit"
