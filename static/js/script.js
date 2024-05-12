@@ -2,9 +2,9 @@ function updateDateTime() {
     const currentDate = new Date();
   
     const monthNames = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
+      'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
+      'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'
+      ];
   
     const year = currentDate.getFullYear();
     const month = monthNames[currentDate.getMonth()];
@@ -14,7 +14,7 @@ function updateDateTime() {
     const minutes = currentDate.getMinutes().toString().padStart(2, '0');
     const seconds = currentDate.getSeconds().toString().padStart(2, '0');
   
-    const formattedDate = `${month} ${day}, ${year}`;
+    const formattedDate = ` ${day} ${month} ${year}`;
     const formattedTime = `${hours}:${minutes}:${seconds}`;
   
     const currentDateTimeElement = document.getElementById('currentDateTime');
