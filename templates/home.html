@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="wrapper d-flex align-items-stretch">
+    <nav style="background-color: #84746c;" id="sidebar" class="active">
+        <div class="custom-menu">
+            <button style="background-color: #20411d; color: white;" type="button" id="sidebarCollapse" class="btn btn">
+      <i class="fa fa-bars"></i>
+      <span class="sr-only">Toggle Menu</span>
+    </button>
+</div>
+        <div class="p-4" >
+          <h3><a href="" class="logo" >Tool Wi</a></h3>
+    <ul class="list-unstyled components mb-5">
+      <li class="active">
+        <a href="/"><ion-icon class="mr-2" name="analytics"></ion-icon>Dashboard</a>
+      </li>
+      <li>
+          <a href="/champ"><ion-icon class="mr-2" name="calendar"></ion-icon>Mes champs</a>
+      </li>
+      <li>
+      <a href="/temperature"><ion-icon class="mr-2" name="cloud"></ion-icon>Mes récoltes</a>
+      </li>
+      <li>
+      <a href="/precipitation"><ion-icon class="mr-2" name="umbrella"></ion-icon>Mon conseiller agricol</a>
+      </li>
+      <li>
+        <a href="/logout"><ion-icon name="log-out-outline"></ion-icon>Me déconnecter</a>
+        </li>
+      <!-- <li>
+        <a href="/humidity"><ion-icon class="mr-2" name="water"></ion-icon>Humidity</a>
+        </li>
+      <li>
+      <a href="/wind"><span class="fa fa-paper-plane mr-2"></span>Wind</a>
+      </li> -->
+    </ul>
+
+    <div class="footer" style="margin-top: 130px; color: aliceblue;" >
+      <!-- <a href="/"><ion-icon name="log-out-outline"></ion-icon>Log out</a> -->
+
+        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Weather Pulse</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Page Content  -->
+<div id="content" style="background-color: black; background-image: url(https://s.rfi.fr/media/display/52a17782-9972-11eb-85e2-005056bf87d6/w:1280/p:16x9/Aissatou_Champs_Mais%20ok.jpg);"">
+  <!-- <h1 class="text-white col-12  " style="margin-top: 150px; margin-left: 50px;   font-size: 40px;font-family: Poppins-Bold;">Discover seamless image transformations with our advanced techniques</h1> -->
+  <!-- <h6 class=" col-6 " style="width: 400px;margin-left: 50px;font-family: Ysabeau-Light;color: lightgray;margin-top: 10px;">Our stitching algorithms, cutting-edge inpainting techniques, and precise registration capabilities make us the go-to source for all your image editing requirements.</h6>  -->
+  
+
+</div>
+    
+
+
+
+{% endblock %}
