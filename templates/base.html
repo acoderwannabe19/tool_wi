@@ -165,9 +165,45 @@
 <body>
 
   <!-- <canvas id="myChart"></canvas> -->
-
-  {% block content %}
-  {% endblock %}
+  <div class="wrapper d-flex align-items-stretch">
+    <nav style="background-color: #84746c;" id="sidebar" class="active">
+      <div class="custom-menu">
+            <button style="background-color: #20411d; color: white;" type="button" id="sidebarCollapse" class="btn btn">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+      </div>
+      <div class="p-4" >
+        <h3><a href="" class="logo" >Tool Wi</a></h3>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="/"><ion-icon class="mr-2" name="analytics"></ion-icon>Dashboard</a>
+          </li>
+          <li>
+              <a><ion-icon class="mr-2" name="calendar"></ion-icon>Analyse Prédictive</a>
+              <ul class="list-unstyled components">
+                <li><a href="/analyse-predictive/v1"><ion-icon class="mr-2" name="checkmark-circle"></ion-icon>Premium</a></li>
+                <li><a href="/analyse-predictive/v2"><ion-icon class="mr-2" name="checkmark-circle"></ion-icon>Basique</a></li>
+                <li><a href="/analyse-predictive/revenu"><ion-icon class="mr-2" name="checkmark-circle"></ion-icon>Revenu</a></li>
+              </ul>  
+          </li>
+          <li>
+          <a href="/temperature"><ion-icon class="mr-2" name="cloud"></ion-icon>Mes récoltes</a>
+          </li>
+          <li>
+          <a href="/precipitation"><ion-icon class="mr-2" name="umbrella"></ion-icon>Mon conseiller agricol</a>
+          </li>
+          <li>
+            <a href="/logout"><ion-icon name="log-out-outline"></ion-icon>Me déconnecter</a>
+            </li>
+        </ul>
+        <div class="footer" style="margin-top: 130px; color: aliceblue;" >
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Weather Pulse</a></p>
+        </div>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+    </div>
     
 
   

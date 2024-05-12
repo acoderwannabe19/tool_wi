@@ -7,5 +7,5 @@ def view_base(request):
     return render(request, "home.html")
 
 
-def view_champ(request):
+def view_analyse(request):
     return render(request, "champ.html")
